@@ -903,8 +903,8 @@ public class NumberPicker extends LinearLayout {
                     long tapTimeout = ViewConfiguration.getTapTimeout();
                     if (deltaMoveY <= mTouchSlop) { // && deltaTime < ViewConfiguration.getTapTimeout()) {
                         if (mShowSoftInputOnTap) {
-                            mShowSoftInputOnTap = false;
-                            showSoftInput();
+                            mShowSoftInputOnTap = true;
+//                            showSoftInput();
                         } else {
                             int selectorIndexOffset = (eventY / mSelectorElementHeight)
                                     - SELECTOR_MIDDLE_ITEM_INDEX;
@@ -2195,7 +2195,7 @@ public class NumberPicker extends LinearLayout {
 
         @Override
         public void run() {
-            showSoftInput();
+//            showSoftInput();
             mIngonreMoveEvents = true;
         }
     }
@@ -2350,7 +2350,7 @@ public class NumberPicker extends LinearLayout {
                         }
                         case AccessibilityNodeInfo.ACTION_CLICK: {
                             if (NumberPicker.this.isEnabled()) {
-                                showSoftInput();
+//                                showSoftInput();
                                 return true;
                             }
                             return false;
