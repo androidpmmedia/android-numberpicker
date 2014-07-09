@@ -10,16 +10,16 @@ import android.os.Bundle;
  */
 public class LightThemeActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_light);
+    setContentView(R.layout.activity_light);
 
-        NumberPicker np = (NumberPicker) findViewById(R.id.numberPicker);
-        np.setMaxValue(20);
-        np.setMinValue(0);
-        np.setFocusable(true);
-        np.setFocusableInTouchMode(true);
-    }
+    NumberPicker np = (NumberPicker) findViewById(R.id.numberPicker);
+    np.setMaxValue(20);
+    np.setMinValue(0);
+    np.setFocusable(true);
+    np.setFocusableInTouchMode(true);
+  }
 }
